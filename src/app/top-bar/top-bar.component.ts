@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+//import { CartComponent } from "../cart/cart.component";
+import { OnChanges } from "@angular/core";
 
 @Component({
   selector: 'app-top-bar',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+  
+  /*ngOnChanges(changes: import("@angular/core").SimpleChanges): {
+    
+  } */
+
+  totalItems: number;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  updateItems(){
+    
   }
 
 }
